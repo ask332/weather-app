@@ -1,38 +1,70 @@
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Nav{
+  padding: 1% 0;
+  background-color: black;
+  text-align: center;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.Nav p{
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.Nav h5{
+  color: white;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Nav h5 a{
+  color: white;
+  text-decoration: none;
+}
+.search{
+  margin: 3% 25%;
+}
+.weather{
+  margin: 5% 20%;
+  padding: 5%;
+  border-radius: 20px;
+  border: 4px solid black;
+  box-shadow: 10px 10px black;
+  text-align: center;
+  max-height: max-content;
+}
+.weather-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid rgb(58, 58, 156);
+  border-radius: 20px;
+  box-shadow: 10px 10px gray;
+  padding: 5%;
+}
+.logo{
+  border-radius: 100%;
+  height: 3rem;
+}
+.data{
+  margin : 2% auto;
+  padding: 3% 2%;
+  border: 3px solid rgb(58, 58, 156);
+  border-radius: 10px;
+}
+.components{
+  margin: 1% auto;
+  padding: 2% auto;
+  border: 2px solid gray;
+  border-radius: 10px;
+  box-shadow: 5px 5px;
+}
+.components span{
+  color: #0096FF;
+}
+.overall{
+  margin: 1% auto;
+  padding: 2% auto;
+  border: 2px solid gray;
+  border-radius: 10px;
+  box-shadow: 5px 5px;
+  background-color: #C0FEFC;
+}
+.overall h3{
+  color: #04009A;
 }
