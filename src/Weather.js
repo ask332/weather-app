@@ -20,7 +20,7 @@ const Weather = () => {
                 </div>
                 <div className="weather-header">
                     <h5>Weather at <span>{lat}</span>° N and <span>{long}</span>° W</h5>
-                    <img src="http://192.168.56.1:8080/download.jpg" alt="" className="logo" />
+                    <img src="./images/download.jpg" alt="" className="logo" />
                     <br />
                 </div>
                 { error && <div>{ error }</div> }
