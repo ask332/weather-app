@@ -20,7 +20,7 @@ const Weather = () => {
                 </div>
                 <div className="weather-header">
                     <h5>Weather at <span>{lat}</span>° N and <span>{long}</span>° W</h5>
-                    <img src="./images/download.jpg" alt="" className="logo" />
+                    <img src="https://ipfs.io/ipfs/QmbHRVErALrFgDhMtdgW71gtFVJGQAZHff122ZewvsNFEc?filename=download.jpg" alt="" className="logo" />
                     <br />
                 </div>
                 { error && <div>{ error }</div> }
@@ -47,7 +47,7 @@ const Weather = () => {
                     <br />
                     <Button variant='dark' onClick={() => {setState(1)}}>Search</Button>
                 </div>
-                <img src="http://192.168.56.1:8080/city.png" alt=""  className="logo"/>
+                <img src="http://bafybeielc2q4qggzagqcdpsboja5y7r4a77ejubdjy2pkk2dvk6d222xzq.ipfs.localhost:8080/?filename=city.png" alt=""  className="logo"/>
                 <br />
                 <h5>Enter location</h5>
             </div>
