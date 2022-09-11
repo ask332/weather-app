@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
-import Button from 'react-bootstrap/Button'
+import Button from 'react-bootstrap/Button';
+import Form from 'react-bootstrap/Form';
 import Data from "./Data";
 import useWeather from './useWeather';
 const Weather = () => {
@@ -20,7 +21,7 @@ const Weather = () => {
                 </div>
                 <div className="weather-header">
                     <h5>Weather at <span>{lat}</span>° N and <span>{long}</span>° W</h5>
-                    <img src="https://ipfs.io/ipfs/QmbHRVErALrFgDhMtdgW71gtFVJGQAZHff122ZewvsNFEc?filename=download.jpg" alt="" className="logo" />
+                    <img src="./download.jpg" alt="" className="logo" />
                     <br />
                 </div>
                 { error && <div>{ error }</div> }
@@ -33,23 +34,23 @@ const Weather = () => {
         return(
             <div className="weather">
                 <div className="search">
-                    <label htmlFor="">
-                        Lat:-
-                        <br />
-                        <input type="text" placeholder='Latitude'  onChange={(e) => {setLat(e.target.value)}}/>
-                    </label>
-                    <label htmlFor="">
-                        Long:-
-                        <br />
-                        <input type="text" placeholder='Longitude' onChange={(e) => {setLong(e.target.value)}}/>
-                    </label>
-                    <br />
-                    <br />
-                    <Button variant='dark' onClick={() => {setState(1)}}>Search</Button>
+                <Form>
+      <Form.Group className="mb-3" controlId="formBasicEmail">
+        <Form.Label>Enter latitude:-</Form.Label>
+        <Form.Control type="text" onChange={(e) => {setLat(e.target.value)}} />
+      </Form.Group>
+
+      <Form.Group className="mb-3" controlId="formBasicPassword">
+        <Form.Label>Enter longitude:-</Form.Label>
+        <Form.Control type="text" onChange={(e) => {setLong(e.target.value)}}/>
+      </Form.Group>
+      <Button variant="success" type="submit" onClick = {() =>{setState(1)}}>
+        Submit
+      </Button>
+    </Form>
+    <br />
+    <img src="./city.png" alt="" className="logo" />
                 </div>
-                <img src="http://bafybeielc2q4qggzagqcdpsboja5y7r4a77ejubdjy2pkk2dvk6d222xzq.ipfs.localhost:8080/?filename=city.png" alt=""  className="logo"/>
-                <br />
-                <h5>Enter location</h5>
             </div>
         );
     }
